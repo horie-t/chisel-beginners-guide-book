@@ -118,3 +118,19 @@ sudo chmod +x /usr/local/bin/vivado.sh
 ```bash
 vivado.sh
 ```
+
+#### FPGAボード・ファイルのインストール
+
+Cmod A7のボートに関する定義ファイルがDigilent社より出ているので、 [ダウンロード](https://github.com/Digilent/vivado-boards/archive/master.zip) して、Vivadoのボード定義ファイルのディレクトリにコピーします。
+
+```bash
+cd ~/ダウンロード/
+unzip vivado-boards-master.zip
+cd vivado-boards-master/new/board_files/
+sudo cp -r * /tools/Xilinx/Vivado/2020.2/data/boards/board_files/
+```
+
+#### FPGAの制約ファイル・テンプレートのダウンロード
+
+自分で開発したFPGAの回路構成とFPGAチップの入出力端子を対応付けるために、制約ファイル(constraint file)というものが必要になります。
+このファイルの雛形が、DIGILENT社より[GitHub](https://github.com/Digilent/digilent-xdc/)で提供されていますので、 `Cmod-A7-Master.xdc` のファイルをダウンロードしておきます。

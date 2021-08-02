@@ -37,3 +37,14 @@ Vivadoの[ダウンロードページ](https://japan.xilinx.com/support/download
 cd C:\Xilinx\Vivado\2020.2\data\xicom\cable_drivers\nt64
 install_drivers_wrapper.bat
 ```
+
+#### FPGAボード・ファイルのインストール
+
+Cmod A7のボートに関する定義ファイルがDigilent社より出ているので、 [ダウンロード](https://github.com/Digilent/vivado-boards/archive/master.zip) して、Vivadoのボード定義ファイルのディレクトリにコピーします。
+
+zipファイルを展開後  `vivado-boards-master\new\board_files` フォルダのすべてを `C:\Xilinx\Vivado\2020.2\data\boards\board_files` にコピーします。
+
+#### FPGAの制約ファイル・テンプレートのダウンロード
+
+自分で開発したFPGAの回路構成とFPGAチップの入出力端子を対応付けるために、制約ファイル(constraint file)というものが必要になります。
+このファイルの雛形が、DIGILENT社より[GitHub](https://github.com/Digilent/digilent-xdc/)で提供されていますので、 `Cmod-A7-Master.xdc` のファイルをダウンロードしておきます。
