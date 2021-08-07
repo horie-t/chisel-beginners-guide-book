@@ -6,7 +6,7 @@ import java.io.PrintWriter
 /**
  * DIPスイッチの状態に合わせて、LEDを点灯させるだけのモジュール
  */
-class LedOnOff extends MultiIOModule {
+class LedOnOff extends RawModule {
   val dipSwitch = IO(Input(Bool()))    // DIPスイッチからの入力ポート
   val led       = IO(Output(Bool()))   // LEDへの出力ポート
 

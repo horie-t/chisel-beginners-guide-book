@@ -6,7 +6,7 @@ import java.io.PrintWriter
 /**
  * DIPスイッチの入力をビット演算する。
  */
-class BitwiseOperator extends MultiIOModule {
+class BitwiseOperator extends RawModule {
   val dipSwitch1 = IO(Input(Bool()))    // DIPスイッチからの入力ポート1
   val dipSwitch2 = IO(Input(Bool()))    // DIPスイッチからの入力ポート2
   val led1       = IO(Output(Bool()))   // LEDへの出力ポート1

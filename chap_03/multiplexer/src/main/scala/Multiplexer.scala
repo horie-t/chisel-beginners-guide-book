@@ -3,7 +3,7 @@ import chisel3.stage._
 
 import java.io.PrintWriter
 
-class Multiplexer extends MultiIOModule {
+class Multiplexer extends RawModule {
   val condition = IO(Input(Bool()))        // 条件
   val consequential = IO(Input(Bool()))    // 条件が真の時の信号
   val alternative = IO(Input(Bool()))      // 条件が偽の時の信号

@@ -4,7 +4,7 @@ import chisel3._
 import chisel3.util._
 import chisel3.stage._
 
-class Adder4BitFor extends MultiIOModule {
+class Adder4BitFor extends RawModule {
   val a = IO(Input(UInt(4.W)))
   val b = IO(Input(UInt(4.W)))
   val sum = IO(Output(UInt(4.W)))
@@ -28,7 +28,7 @@ class Adder4BitFor extends MultiIOModule {
 
 /** 加算器。入力4bit、出力は桁上げに対応して5bit。
   */
-class Adder4Bit extends MultiIOModule {
+class Adder4Bit extends RawModule {
   val a = IO(Input(UInt(4.W)))
   val b = IO(Input(UInt(4.W)))
   val sum = IO(Output(UInt(4.W)))
@@ -63,7 +63,7 @@ class Adder4Bit extends MultiIOModule {
 
 /** 全加算器
   */
-class FullAdder extends MultiIOModule {
+class FullAdder extends RawModule {
   val a = IO(Input(UInt(1.W)))
   val b = IO(Input(UInt(1.W)))
   val carryIn = IO(Input(UInt(1.W)))
@@ -88,7 +88,7 @@ class FullAdder extends MultiIOModule {
 
 /** 半加算器
   */
-class HalfAdder extends MultiIOModule {
+class HalfAdder extends RawModule {
   val a = IO(Input(UInt(1.W)))
   val b = IO(Input(UInt(1.W)))
   val sum = IO(Output(UInt(1.W)))
