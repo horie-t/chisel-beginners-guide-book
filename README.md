@@ -1,5 +1,5 @@
 # chisel-beginners-guide-book
-『[Chiselで始めるFPGA電子工作(https://amzn.to/3ju26Hc)]』のサポートサイトです
+『[Chiselで始めるFPGA電子工作](https://amzn.to/3ju26Hc)』のサポートサイトです
 
 開発環境のセットアップ方法は以下を参照してください。
 
